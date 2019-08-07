@@ -1,6 +1,6 @@
 <div class="form-label-group">
-  <input class="form-control" [type]="type"
-   #input [placeholder]="placeholder" ngModel>
+  <input class="form-control" [type]="type" [required]="isRequired"
+   #input="ngModel" [placeholder]="placeholder" [(ngModel)]="emailValue">
 
   <div class="d-flex">
     <span class="v" *ngIf="input.valid">
